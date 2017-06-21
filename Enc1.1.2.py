@@ -3,7 +3,7 @@ from pythonosc import udp_client
 from pythonosc import osc_message_builder
 
 EncOUT = serial.Serial('com5')
-EncIN = Enc1OUT.read(1)
+EncIN = EncOUT.read(2)
 EOSClient = udp_client.SimpleUDPClient("172.20.15.111", 5001)
 
 while int(EncIN)  < 53:
